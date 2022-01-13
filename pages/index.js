@@ -1,8 +1,15 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import "react-toastify/dist/ReactToastify.css";
+import { Button } from "@mui/material";
+import { useState } from "react";
+import React from "react";
+import { ToastContainer, toast } from "react-toastify";
 
-export default function Home() {
+export default function Home(props) {
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const notify = () => toast.success("your email has been submitted!");
   return (
     <div className={styles.container}>
       <Head>
@@ -13,6 +20,26 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome</h1>
+
+        <input
+          onChange={(text) => {
+            setEmail(text.target.value);
+            console.log(email);
+          }}
+          placeholder='enter your email here'
+          className='border-2 p-3 border-black rounded-full'
+          type='text'
+          name=''
+          id=''
+        />
+
+        <Button
+        
+        
+          className='bg-black p-4 rounded-full mt-6 text-white text-center'
+          buttonName = 'Save'
+        />
+        
       </main>
 
       <footer className={styles.footer}></footer>
