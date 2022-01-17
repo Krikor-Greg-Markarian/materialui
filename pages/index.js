@@ -25,6 +25,7 @@ const useStyles = makeStyles({
 
 export default function Home(props) {
   const classes = useStyles();
+
   return (
     <Grid container direction='column'>
       <Grid item>
