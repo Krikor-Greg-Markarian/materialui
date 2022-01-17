@@ -3,6 +3,8 @@ import Header from "../src/Header";
 import Contetnt from "../src/Contetnt";
 import { Button } from "@mui/material";
 import { makeStyles } from "@material-ui/styles";
+import axios from "axios";
+import CoffeCard from "../src/CoffeCard";
 
 const useStyles = makeStyles({
   buttonStyle: {
@@ -28,15 +30,33 @@ export default function Home(props) {
       <Grid item>
         <Header />
       </Grid>
-      <Grid item container>
-        <Grid item xs={false} sm={2} />
-        <Grid item xs={12} sm={8}>
-          <Contetnt />
-        </Grid>
+      <Grid spacing={4} item container>
+        <Grid item xs={false} sm={12} />
+        {props.boxData.map((item, idx) => (
+          <Grid item xs={12} sm={4}>
+            <CoffeCard
+              avatarName={item.avatarName}
+              title={item.title}
+              subHeader={item.subHeader}
+              description={item.description}
+              imageUrl={item.imageUrl}
+            />
+          </Grid>
+        ))}
         <Grid item xs={false} sm={2} />
       </Grid>
       <Button className={classes.buttonStyle}>Testing button</Button>
       <h1 className={classes.textStyle}>Hello World</h1>
     </Grid>
   );
+}
+
+export async function getServerSideProps(context) {
+  const response = await axios.get("http://localhost:3000/api/hello");
+
+  return {
+    props: {
+      boxData: response.data.boxData,
+    }, // will be passed to the page component as props
+  };
 }
