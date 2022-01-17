@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 import CardHeader from "@mui/material/CardHeader";
 import Avatar from "@mui/material/Avatar";
 import ShareIcon from "@mui/icons-material/Share";
-import { IconButton } from "@mui/material";
+import { CardMedia, IconButton } from "@mui/material";
 const bull = (
   <Box
     component='span'
@@ -35,6 +35,12 @@ const CoffeCard = (props) => {
         }
         title={title}
         subheader={subtitle}
+      />
+      <CardMedia
+        component='img'
+        height='194'
+        image={props.imageUrl}
+        alt='Paella dish'
       />
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color='text.secondary' gutterBottom>
