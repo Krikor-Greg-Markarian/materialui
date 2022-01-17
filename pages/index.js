@@ -5,6 +5,7 @@ import { Button } from "@mui/material";
 import { makeStyles } from "@material-ui/styles";
 import axios from "axios";
 import CoffeCard from "../src/CoffeCard";
+import CoolButton from "../src/CoolButton";
 
 const useStyles = makeStyles({
   buttonStyle: {
@@ -25,6 +26,7 @@ const useStyles = makeStyles({
 
 export default function Home(props) {
   const classes = useStyles();
+  const cool = true;
 
   return (
     <Grid container direction='column'>
@@ -46,8 +48,9 @@ export default function Home(props) {
         ))}
         <Grid item xs={false} sm={2} />
       </Grid>
-      <Button className={classes.buttonStyle}>Testing button</Button>
-      <h1 className={classes.textStyle}>Hello World</h1>
+      {/* <Button className={classes.buttonStyle}>Testing button</Button>
+      <h1 className={classes.textStyle}>Hello World</h1> */}
+      <CoolButton cool={cool} />
     </Grid>
   );
 }
