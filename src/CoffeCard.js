@@ -90,7 +90,7 @@ export default function RecipeReviewCard(props) {
   };
 
   return (
-    <Card>
+    <Card sx={{ mr: 4,ml:4 }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label='recipe'>

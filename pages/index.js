@@ -31,7 +31,7 @@ export default function Home(props) {
         <Header />
       </Grid>
       <Grid item xs={false} sm={2} />
-      <Grid spacing={4} item container>
+      <Grid spacing={2} item container>
         {props.boxData.map((item, idx) => (
           <Grid item xs={12} sm={4}>
             <CoffeCard
