@@ -28,7 +28,7 @@ export default function handler(req, res) {
         description:
           "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
         imageUrl:
-          "https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032__340.jpg",
+          "https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665__480.jpg",
       },
       {
         avatarName: "D",

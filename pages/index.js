@@ -30,8 +30,8 @@ export default function Home(props) {
       <Grid item>
         <Header />
       </Grid>
-      <Grid spacing={4} item container>
-        <Grid item xs={false} sm={12} />
+      <Grid item xs={false} sm={2} />
+      <Grid alignItems='center' justify='center' spacing={4} item container>
         {props.boxData.map((item, idx) => (
           <Grid item xs={12} sm={4}>
             <CoffeCard

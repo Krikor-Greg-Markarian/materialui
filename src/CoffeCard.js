@@ -109,6 +109,7 @@ export default function RecipeReviewCard(props) {
         component='img'
         height='194'
         image={props.imageUrl}
+        
         alt='Paella dish'
       />
       <CardContent>
