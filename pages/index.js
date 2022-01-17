@@ -16,6 +16,9 @@ const useStyles = makeStyles({
     // padding: "0 30px",
     color: "red",
   },
+  textStyle: {
+    color: "green",
+  },
 });
 
 export default function Home(props) {
@@ -33,6 +36,7 @@ export default function Home(props) {
         <Grid item xs={false} sm={2} />
       </Grid>
       <Button className={classes.buttonStyle}>Testing button</Button>
+      <h1 className={classes.textStyle}>Hello World</h1>
     </Grid>
   );
 }
