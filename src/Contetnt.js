@@ -26,7 +26,7 @@ const Contetnt = (props) => {
           title='LB Single Serve Coffee'
           subHeader='$32'
           description='  This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests. Add 1 cup of frozen peas along.'
+          together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.'
           imageUrl='https://cdn.pixabay.com/photo/2015/05/04/10/16/vegetables-752153__340.jpg'
         />
       </Grid>
@@ -36,7 +36,7 @@ const Contetnt = (props) => {
           title='LB Single Serve Coffee'
           subHeader='$33.43'
           description='  This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests.'
+          together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.'
           imageUrl='https://cdn.pixabay.com/photo/2017/09/16/19/21/salad-2756467__340.jpg'
         />
       </Grid>
@@ -46,7 +46,7 @@ const Contetnt = (props) => {
           title='LB Single Serve Coffee'
           subHeader='$23.99'
           description='  This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests. Add 1 cup of frozen peas.'
+          together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.'
           imageUrl='https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032__340.jpg'
         />
       </Grid>
@@ -56,7 +56,7 @@ const Contetnt = (props) => {
           title='LB Single Serve Coffee'
           subHeader='$13.99'
           description='  This impressive paella is a perfect party dish and a fun meal to cook
-          together.'
+          together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.'
           imageUrl='https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062__340.jpg'
         />
       </Grid>
@@ -65,7 +65,8 @@ const Contetnt = (props) => {
           AvatarName='F'
           title='LB Single Serve Coffee'
           subHeader='$8'
-          description='  This impressive paella is a perfect party dish and a fun meal.'
+          description='  This impressive paella is a perfect party dish and a fun meal to cook
+          together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.'
           imageUrl='https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590__480.jpg'
         />
       </Grid>
