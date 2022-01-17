@@ -1,7 +1,6 @@
 import { Grid } from "@material-ui/core";
 import Header from "../src/Header";
 import Contetnt from "../src/Contetnt";
-import { typography } from "@mui/system";
 
 export default function Home(props) {
   return (
