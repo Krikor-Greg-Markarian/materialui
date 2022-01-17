@@ -46,7 +46,8 @@ const CoffeCard = (props) => {
         <Typography variant='body2'>{description}</Typography>
       </CardContent>
       <CardActions>
-        <Button size='small'>Learn More</Button>
+        <Button size='small'>BUY NOW</Button>
+        <Button size='small'>OFFER</Button>
       </CardActions>
     </Card>
   );
