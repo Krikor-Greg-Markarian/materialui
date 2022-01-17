@@ -6,7 +6,11 @@ const Contetnt = () => {
   return (
     <Grid container spacing={4}>
       <Grid item xs={12} sm={4}>
-        <CoffeCard title = {"Hamilton Beach FlexBee"} />
+        <CoffeCard
+          title='Hamilton Beach FlexBee'
+          subtitle='89.99'
+          avatarSrc='https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032__340.jpg'
+        />
       </Grid>
       <Grid item xs={12} sm={4}>
         <CoffeCard />
