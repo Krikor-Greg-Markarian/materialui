@@ -5,6 +5,7 @@ import { buttonBaseClasses } from "@mui/material";
 const useStyles = makeStyles({
   buttonStyles: {
     color: (props) => (props.cool ? "blue" : "red"),
+    backgroundColor: (props) => (props.cool ? "orange" : "pink"),
   },
 });
 

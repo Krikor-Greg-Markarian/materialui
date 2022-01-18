@@ -70,6 +70,7 @@ import ShareIcon from "@mui/icons-material/Share";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import { Button } from "@mui/material";
+import { makeStyles } from "@material-ui/styles";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -90,7 +91,7 @@ export default function RecipeReviewCard(props) {
   };
 
   return (
-    <Card sx={{ mr: 4, ml: 4, mt: 2 }}>
+    <Card className={classes.root}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label='recipe'>

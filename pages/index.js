@@ -1,4 +1,4 @@
-import { Grid } from "@material-ui/core";
+import { Box, Container, Grid } from "@material-ui/core";
 import Header from "../src/Header";
 import Contetnt from "../src/Contetnt";
 import { Button } from "@mui/material";
@@ -26,7 +26,7 @@ const useStyles = makeStyles({
 
 export default function Home(props) {
   const classes = useStyles();
-  const cool = true;
+  const cool = false;
 
   return (
     <Grid container direction='column'>
@@ -34,20 +34,23 @@ export default function Home(props) {
         <Header />
       </Grid>
       <Grid item xs={false} sm={2} />
-      <Grid spacing={2} item container>
-        {props.boxData.map((item, idx) => (
-          <Grid item xs={12} sm={4}>
-            <CoffeCard
-              avatarName={item.avatarName}
-              title={item.title}
-              subHeader={item.subHeader}
-              description={item.description}
-              imageUrl={item.imageUrl}
-            />
-          </Grid>
-        ))}
-        <Grid item xs={false} sm={2} />
-      </Grid>
+      <Container fixed>
+        <Grid spacing={2} item container>
+          {props.boxData.map((item, idx) => (
+            <Grid item xs={12} sm={4}>
+              <CoffeCard 
+                avatarName={item.avatarName}
+                title={item.title}
+                subHeader={item.subHeader}
+                description={item.description}
+                imageUrl={item.imageUrl}
+              />
+            </Grid>
+          ))}
+          <Grid item xs={false} sm={2} />
+        </Grid>
+      </Container>
+
       {/* <Button className={classes.buttonStyle}>Testing button</Button>
       <h1 className={classes.textStyle}>Hello World</h1> */}
       <CoolButton cool={cool} />
