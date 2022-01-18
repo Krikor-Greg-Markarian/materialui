@@ -1,4 +1,4 @@
-import { Box, Container, Grid } from "@material-ui/core";
+import { Box, Container, Grid, Typography } from "@material-ui/core";
 import Header from "../src/Header";
 import Contetnt from "../src/Contetnt";
 import { Button } from "@mui/material";
@@ -7,6 +7,13 @@ import axios from "axios";
 import CoffeCard from "../src/CoffeCard";
 import CoolButton from "../src/CoolButton";
 import TypesOfButtons from "../src/TylesOfButtons";
+import { typography } from "@mui/system";
+
+const useStyles = makeStyles({
+  buttonStyles: {
+    color: "blue",
+  },
+});
 
 // const useStyles = makeStyles({
 //   buttonStyle: {
@@ -25,11 +32,11 @@ import TypesOfButtons from "../src/TylesOfButtons";
 //   },
 // });
 
-
-
-
-
-
+// const useStyles = makeStyles({
+//   typographyStyles: {
+//     color: "red",
+//   },
+// });
 
 export default function Home(props) {
   const classes = useStyles();
@@ -63,13 +70,28 @@ export default function Home(props) {
       {/* <CoolButton cool={cool} /> */}
 
       {/* <TypesOfButtons /> */}
-      <Button
+      {/* <Button
         className={classes.root}
         variant='outlined'
         color='primary'
         size='small'
       >
         small button
+      </Button> */}
+      {/* <Typography
+        // gutterBottom
+        // variant='h1'
+        // noWrap
+        // color='secondary'
+        //  align="center"
+        // variant = "h1"
+        className={classes.typographyStyles}
+      >
+        Hello
+      </Typography> */}
+
+      <Button className={classes.buttonStyles}>
+        hello my name is a button
       </Button>
     </Grid>
   );
