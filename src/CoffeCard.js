@@ -91,7 +91,7 @@ export default function RecipeReviewCard(props) {
   };
 
   return (
-    <Card className={classes.root}>
+    <Card>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label='recipe'>
