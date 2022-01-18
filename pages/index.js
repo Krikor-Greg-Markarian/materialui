@@ -6,6 +6,7 @@ import { makeStyles } from "@material-ui/styles";
 import axios from "axios";
 import CoffeCard from "../src/CoffeCard";
 import CoolButton from "../src/CoolButton";
+import TypesOfButtons from "../src/TylesOfButtons"
 
 const useStyles = makeStyles({
   buttonStyle: {
@@ -58,6 +59,7 @@ export default function Home(props) {
       <Button variant='contained' color='primary'>
         Primary
       </Button>
+      <TypesOfButtons/>
     </Grid>
   );
 }
