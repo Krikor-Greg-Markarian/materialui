@@ -38,7 +38,7 @@ export default function Home(props) {
         <Grid spacing={2} item container>
           {props.boxData.map((item, idx) => (
             <Grid item xs={12} sm={4}>
-              <CoffeCard 
+              <CoffeCard
                 avatarName={item.avatarName}
                 title={item.title}
                 subHeader={item.subHeader}
@@ -53,7 +53,11 @@ export default function Home(props) {
 
       {/* <Button className={classes.buttonStyle}>Testing button</Button>
       <h1 className={classes.textStyle}>Hello World</h1> */}
-      <CoolButton cool={cool} />
+      {/* <CoolButton cool={cool} /> */}
+
+      <Button variant='contained' color='primary'>
+        Primary
+      </Button>
     </Grid>
   );
 }
