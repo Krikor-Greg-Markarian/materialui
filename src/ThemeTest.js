@@ -1,4 +1,4 @@
-import { Button } from "@material-ui/core";
+import { Button, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import React from "react";
 
@@ -16,6 +16,7 @@ const ThemeTest = (props) => {
       <Button variant='contained' color='primary'>
         this is a button
       </Button>
+      <Typography variant='h1'>this is a typography</Typography>
     </div>
   );
 };

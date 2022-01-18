@@ -2,13 +2,23 @@ import { Box, Container, Grid, Typography } from "@material-ui/core";
 import Header from "../src/Header";
 import Contetnt from "../src/Contetnt";
 import { Button } from "@mui/material";
-import { makeStyles } from "@material-ui/styles";
+import { makeStyles, ThemeProvider } from "@material-ui/styles";
 import axios from "axios";
 import CoffeCard from "../src/CoffeCard";
 import CoolButton from "../src/CoolButton";
 import TypesOfButtons from "../src/TylesOfButtons";
 import { typography } from "@mui/system";
 import ThemeTest from "../src/ThemeTest";
+import { createTheme } from "@mui/material/styles";
+import { green, purple } from "@mui/material/colors";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#CCCCCC",
+    },
+  },
+});
 
 const useStyles = makeStyles({
   buttonStyles: {
@@ -94,7 +104,10 @@ export default function Home(props) {
       {/* <Button className={classes.buttonStyles}>
         hello my name is a button
       </Button> */}
-      <ThemeTest></ThemeTest>
+
+      <ThemeProvider theme={theme}>
+        <ThemeTest></ThemeTest>
+      </ThemeProvider>
     </Grid>
   );
 }
