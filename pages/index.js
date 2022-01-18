@@ -6,24 +6,30 @@ import { makeStyles } from "@material-ui/styles";
 import axios from "axios";
 import CoffeCard from "../src/CoffeCard";
 import CoolButton from "../src/CoolButton";
-import TypesOfButtons from "../src/TylesOfButtons"
+import TypesOfButtons from "../src/TylesOfButtons";
 
-const useStyles = makeStyles({
-  buttonStyle: {
-    // background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
-    // border: 0,
-    // borderRadius: 3,
-    // boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
-    // color: "white",
-    // height: 48,
-    // width: 220,
-    // padding: "0 30px",
-    color: "red",
-  },
-  textStyle: {
-    color: "green",
-  },
-});
+// const useStyles = makeStyles({
+//   buttonStyle: {
+//     // background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
+//     // border: 0,
+//     // borderRadius: 3,
+//     // boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
+//     // color: "white",
+//     // height: 48,
+//     // width: 220,
+//     // padding: "0 30px",
+//     color: "red",
+//   },
+//   textStyle: {
+//     color: "green",
+//   },
+// });
+
+
+
+
+
+
 
 export default function Home(props) {
   const classes = useStyles();
@@ -56,10 +62,15 @@ export default function Home(props) {
       <h1 className={classes.textStyle}>Hello World</h1> */}
       {/* <CoolButton cool={cool} /> */}
 
-      <Button variant='contained' color='primary'>
-        Primary
+      {/* <TypesOfButtons /> */}
+      <Button
+        className={classes.root}
+        variant='outlined'
+        color='primary'
+        size='small'
+      >
+        small button
       </Button>
-      <TypesOfButtons/>
     </Grid>
   );
 }
