@@ -59,7 +59,7 @@ export default function Home(props) {
         <Header />
       </Grid>
       <Grid item xs={false} sm={2} />
-      <Container fixed>
+      <Container>
         <Grid spacing={2} item container>
           {props.boxData.map((item, idx) => (
             <Grid item xs={12} sm={4}>
@@ -105,9 +105,11 @@ export default function Home(props) {
         hello my name is a button
       </Button> */}
 
-      <ThemeProvider theme={theme}>
+      {/* <ThemeProvider theme={theme}>
         <ThemeTest></ThemeTest>
-      </ThemeProvider>
+      </ThemeProvider> */}
+
+      <ThemeTest></ThemeTest>
     </Grid>
   );
 }
