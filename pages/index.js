@@ -8,6 +8,7 @@ import CoffeCard from "../src/CoffeCard";
 import CoolButton from "../src/CoolButton";
 import TypesOfButtons from "../src/TylesOfButtons";
 import { typography } from "@mui/system";
+import ThemeTest from "../src/ThemeTest";
 
 const useStyles = makeStyles({
   buttonStyles: {
@@ -90,9 +91,10 @@ export default function Home(props) {
         Hello
       </Typography> */}
 
-      <Button className={classes.buttonStyles}>
+      {/* <Button className={classes.buttonStyles}>
         hello my name is a button
-      </Button>
+      </Button> */}
+      <ThemeTest></ThemeTest>
     </Grid>
   );
 }
