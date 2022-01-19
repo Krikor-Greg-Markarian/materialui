@@ -4,7 +4,7 @@ import React from "react";
 const Paper = (props) => {
   return (
     <div>
-      <Paper elevation = "1">
+      <Paper style={{ borderradious: "10px" }} elevation='1' square>
         <Typography variant='h6'>This is my typography</Typography>
       </Paper>
     </div>
