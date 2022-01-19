@@ -12,13 +12,25 @@ import ThemeTest from "../src/ThemeTest";
 import { createTheme } from "@mui/material/styles";
 import { green, purple } from "@mui/material/colors";
 
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#CCCCCC",
-    },
-  },
-});
+// const theme = createTheme({
+//   palette: {
+//     primary: {
+//       main: "#CCCCCC",
+//     },
+//   },
+// });
+
+// const theme = createTheme({
+//   palette: {
+//     primary: green,
+//   },
+// });
+
+// const theme = createTheme({
+//   palette: {
+//     type: "dark",
+//   },
+// });
 
 const useStyles = makeStyles({
   buttonStyles: {
@@ -105,11 +117,9 @@ export default function Home(props) {
         hello my name is a button
       </Button> */}
 
-      {/* <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
         <ThemeTest></ThemeTest>
-      </ThemeProvider> */}
-
-      <ThemeTest></ThemeTest>
+      </ThemeProvider>
     </Grid>
   );
 }
