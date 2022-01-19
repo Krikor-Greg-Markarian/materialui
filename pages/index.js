@@ -23,6 +23,12 @@ import Paper from "../src/Paper";
 
 // const theme = createTheme({
 //   palette: {
+//     type: "dark",
+//   },
+// });
+
+// const theme = createTheme({
+//   palette: {
 //     primary: green,
 //   },
 // });
@@ -33,11 +39,11 @@ import Paper from "../src/Paper";
 //   },
 // });
 
-const useStyles = makeStyles({
-  buttonStyles: {
-    color: "blue",
-  },
-});
+// const useStyles = makeStyles({
+//   buttonStyles: {
+//     color: "blue",
+//   },
+// });
 
 // const useStyles = makeStyles({
 //   buttonStyle: {
@@ -63,8 +69,8 @@ const useStyles = makeStyles({
 // });
 
 export default function Home(props) {
-  const classes = useStyles();
-  const cool = false;
+  // const classes = useStyles();
+  // const cool = false;
 
   return (
     <Grid container direction='column'>
@@ -122,7 +128,7 @@ export default function Home(props) {
       {/* <ThemeProvider theme={theme}>
         <ThemeTest></ThemeTest>
       </ThemeProvider> */}
-      <Paper></Paper>
+      
     </Grid>
   );
 }

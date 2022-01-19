@@ -4,8 +4,8 @@ import React from "react";
 const Paper = (props) => {
   return (
     <div>
-      <Paper>
-        <Typography>This is my typography</Typography>
+      <Paper elevation = "1">
+        <Typography variant='h6'>This is my typography</Typography>
       </Paper>
     </div>
   );
