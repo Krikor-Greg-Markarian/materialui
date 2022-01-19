@@ -1,13 +1,14 @@
-import React from 'react'
+import { Typography } from "@material-ui/core";
+import React from "react";
 
 const Paper = (props) => {
-    return (
-        <div>
-            <Paper>
-                <Typograph>This is my typography</Typograph>
-            </Paper>
-        </div>
-    )
-}
+  return (
+    <div>
+      <Paper>
+        <Typography>This is my typography</Typography>
+      </Paper>
+    </div>
+  );
+};
 
-export default Paper
+export default Paper;

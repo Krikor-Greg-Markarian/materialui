@@ -11,6 +11,7 @@ import { typography } from "@mui/system";
 import ThemeTest from "../src/ThemeTest";
 import { createTheme } from "@mui/material/styles";
 import { green, purple } from "@mui/material/colors";
+import Paper from "../src/Paper";
 
 // const theme = createTheme({
 //   palette: {
@@ -76,6 +77,7 @@ export default function Home(props) {
           {props.boxData.map((item, idx) => (
             <Grid item xs={12} sm={4}>
               <CoffeCard
+                key={idx}
                 avatarName={item.avatarName}
                 title={item.title}
                 subHeader={item.subHeader}
@@ -117,9 +119,10 @@ export default function Home(props) {
         hello my name is a button
       </Button> */}
 
-      <ThemeProvider theme={theme}>
+      {/* <ThemeProvider theme={theme}>
         <ThemeTest></ThemeTest>
-      </ThemeProvider>
+      </ThemeProvider> */}
+      <Paper></Paper>
     </Grid>
   );
 }
