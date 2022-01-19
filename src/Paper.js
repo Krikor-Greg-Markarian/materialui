@@ -4,7 +4,7 @@ const Paper = (props) => {
     return (
         <div>
             <Paper>
-                
+                <Typograph></Typograph>
             </Paper>
         </div>
     )
